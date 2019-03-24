@@ -12,7 +12,7 @@ const imagesList = (props) => {
                         file={pic.file}
                         desc={pic.description}
                         hashtags={pic.hashtags.map((hashtag, index) => {
-                            return `#${hashtag}`;
+                            return ` #${hashtag}`;
                         })}
                     />
                 })

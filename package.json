@@ -7,7 +7,7 @@
     "react-dom": "^16.8.4",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8",
+    "react-scripts": "^2.1.8",
     "tachyons": "^4.11.1"
   },
   "scripts": {
@@ -24,5 +24,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adihason/adihason-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adihason/adihason-frontend/issues"
+  },
+  "homepage": "https://github.com/adihason/adihason-frontend#readme"
 }

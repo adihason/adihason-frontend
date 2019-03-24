@@ -6,7 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, #94d8e3e0, #7e0f766e);
+  background-image: linear-gradient(to right, #16222A, #3A6073);
+  color: white;
 }
 
 code {
@@ -26,6 +27,6 @@ header{
 h1{
   font-family: 'Monoton', cursive;
   font-size: 60px;
-  color: #000000;
+  color: white;
 }
 

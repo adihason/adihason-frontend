@@ -22,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="tc">
         <h1 className="tc">My Album</h1>
         <Scroll>
           <ImagesList images={this.state.images} />

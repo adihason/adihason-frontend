@@ -46,7 +46,7 @@ class Uploader extends Component {
             return <Redirect to='/' />;
         }
         return (
-            <div>
+            <div className="mw5 mw7-ns center pa3 ph5-ns shadow-3">
                 <div className="measure">
                     <label for="name" className="f6 b db mb2">Image</label>
                     <input
@@ -76,7 +76,7 @@ class Uploader extends Component {
                         onChange={(e) => this.onHashtagsChange(e)}></textarea>
                 </div>
                 <button
-                    className="f6 link dim br3 ba bw2 ph3 pv2 mb2 db hot-pink w-100"
+                    className="f6 link dim br3 ba bw2 ph3 pv2 mb2 db hot-pink "
                     onClick={this.addNewImage}>Add Image</button>
             </div>
         );
