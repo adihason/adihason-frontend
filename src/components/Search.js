@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import ImagesList from './ImagesList';
 
 class Search extends Component {
     constructor() {
         super();
         this.state = {
-            images: [],
-            hashtagsInput: ''
+            hashtagsInput: '',
+            images: []
         }
     }
 
@@ -16,7 +17,8 @@ class Search extends Component {
     }
 
     searchImage = () => {
-        fetch(`http://localhost:5001/search/${this.state.hashtagsInput}`)
+        let hashtags = this.state.hashtagsInput.split('#').slice(1).toString();
+        fetch(`http://localhost:5001/search/${hashtags}`)
             .then(res => res.json())
             .then(pics => {
                 this.setState({
@@ -42,7 +44,7 @@ class Search extends Component {
                             onClick={this.searchImage}>Search</button>
                     </div>
                     <div className="fl w-70 pa2">
-
+                        <ImagesList images={this.state.images} />
                     </div>
                 </div>
             </div>
